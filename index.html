@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html LANG="PL">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <title> Kalkulator </title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+
+<body id="container">
+    <h1>Kalkulator</h1>
+    <div class="container">
+
+        <form name="calculator">
+            <input id="delete" type="text" name="answer" />
+            <br/>
+            <input type="button" value=" C " onclick="calculator.answer.value = ' '" />
+            <input type="button" value=" ( " onclick="calculator.answer.value += '('" />
+            <input type="button" value=" ) " onclick="calculator.answer.value += ')'" />
+            <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
+            <br/>
+            <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
+            <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
+            <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
+            <input type="button" value=" * " onclick="calculator.answer.value += '*'" />
+            <br/>
+            <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
+            <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
+            <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
+            <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
+            <br/>
+            <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
+            <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
+            <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
+            <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
+            <br/>
+            <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
+            <input type="button" value=" . " onclick="calculator.answer.value += '.'" />
+            <input type="button" value=" CE " onclick="calculator.answer.value = calculator.answer.value.slice(0, calculator.answer.value.length -1)" />
+            <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+            <br/>
+
+        </form>
+    </div>
+
+
+
+</body>
+
+
+</html>
